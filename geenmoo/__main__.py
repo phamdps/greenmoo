@@ -16,6 +16,7 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with Platypus.  If not, see <http://www.gnu.org/licenses/>.
+
 import importlib
 import json
 import locale
@@ -26,9 +27,7 @@ import re
 import sys
 from argparse import ArgumentParser
 
-import greenmoo
-
-from greenmoo.utils._tools import (coalesce, log_args, only_keys_for, parse_cli_keyvalue,
+from utils._tools import (coalesce, log_args, only_keys_for, parse_cli_keyvalue,
                      type_cast)
 
 

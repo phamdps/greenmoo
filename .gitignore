@@ -84,5 +84,6 @@ env/
 # Extra files
 data/
 results/
-green-ai/
+greenai/
 xrefs/
+frugalai/

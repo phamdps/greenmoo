@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "frugal-green-ai"
+version = "0.1.0"
+description = "Tracking and Optimizing Carbon Emissions with CodeCarbon"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "codecarbon",
+    # Add other core dependencies here (e.g., torch, pandas, etc.)
+]
+
+[tool.setuptools.packages.find]
+include = ["geenmoo*", "greenai*", "frugalai*"]

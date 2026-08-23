@@ -1,7 +1,7 @@
 <div align="center">
 
-<h1 style="margin-bottom: 0;">🌿 Frugal & Green AI</h1>
-<h3><em>Tracking and Optimizing Carbon Emissions with CodeCarbon</em></h3>
+<h1 style="margin-bottom: 0;">🌿 Multiobjective Green AI & Automated NAS</h1>
+<h3><em>Maximizing Deep Learning Performance While Minimizing Carbon Footprint</em></h3>
 
 <p>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square&logo=opensourceinitiative" alt="License: MIT"></a>
@@ -10,33 +10,35 @@
   <a href="https://github.com/phamdps/greenautoai/graphs/commit-activity"><img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?style=flat-square" alt="Maintained"></a>
 </p>
 
-<p><em>Building efficient, environmentally conscious machine learning models while accurately monitoring their carbon footprint.</em></p>
+<p><em>Developing automated deep learning tools using multi-objective optimization algorithms to explore neural network architectures that balance high accuracy with minimal environmental footprint.</em></p>
 
 </div>
 
-## 💡 What is Green & Frugal AI?
+## 💡 What is Green AI & Frugal AI?
 
-Modern Artificial Intelligence models (especially Large Language Models and Deep Learning architectures) require vast computational resources. This high energy consumption translates directly to carbon emissions.
+Modern Artificial Intelligence models and search algorithms require vast computational resources, which translates directly to high energy consumption and carbon emissions.
 
-* **Green AI:** Focuses on computational efficiency as a primary metric alongside accuracy, reducing the energy footprint of AI research and deployment.
+* **Green AI:** Focuses on computational efficiency as a primary metric alongside accuracy, explicitly targeting the reduction of energy footprints and carbon emissions in AI research and deployment.
 * **Frugal AI:** Emphasizes resource efficiency—achieving high performance using smaller datasets, lighter models, and fewer GPU hours.
+* **Multiobjective Optimization (MOO):** Combines these principles into an automated framework that explores Pareto-optimal trade-offs between accuracy and carbon emissions.
 
 ---
 
 ## 🛠️ Technology Stack & Tools
 
 * **Python:** Core programming language.
-* **CodeCarbon:** Lightweight Python package designed to estimate the amount of carbon dioxide ($CO_2$) produced by cloud or local hardware during execution.
-* **Machine Learning / Deep Learning Frameworks:** PyTorch, TensorFlow, or Scikit-Learn.
+* **Multi-Objective Optimization Algorithms:** Algorithms designed to navigate the Pareto frontier (balancing accuracy vs. emissions).
+* **CodeCarbon:** Lightweight Python package designed to estimate carbon dioxide ($CO_2$) emissions produced during hardware execution.
+* **Deep Learning Frameworks:** PyTorch, TensorFlow, and automated neural network architecture exploration tools.
 
 ---
 
-## 📊 Project Carbon Footprint
+## 📊 Multiobjective Trade-off & Pareto Front
 
-Here is the visual tracking report generated for our Qwen2-VL execution pipeline:
+The automated pipeline evaluates multiple network configurations to discover architectures that maximize performance while minimizing environmental impact:
 
 <p align="center">
-  <img src="images/project_carbon_footprint.png" alt="Carbon Footprint Summary" width="700px">
+  <img src="images/greenmoo.jpeg" alt="Pareto Optimal Front: Accuracy vs Carbon Footprint" width="900px">
 </p>
 
 ---
@@ -48,8 +50,8 @@ Here is the visual tracking report generated for our Qwen2-VL execution pipeline
 Clone this repository and install the dependencies:
 
 ```bash
-git clone [https://github.com/phamdps/greenautoai.git](https://github.com/phamdps/greenautoai.git)
-cd greenautoai
+git clone [https://github.com/phamdps/greenmoo.git](https://github.com/phamdps/greenmoo.git)
+cd greenmoo
 pip install -r requirements.txt
 
 ```
@@ -58,30 +60,27 @@ pip install -r requirements.txt
 
 ### 2. Usage Examples
 
-#### Option A: Using the `EmissionsTracker` Class
+#### Option A: Tracking Carbon Footprint During Search/Training
 
 ```python
 from codecarbon import EmissionsTracker
 import time
 
-# Initialize the tracker
+# Initialize the tracker for your optimization loop
 tracker = EmissionsTracker(
-    project_name="Frugal_AI_Experiment",
+    project_name="Multiobjective_Green_AI_Search",
     output_dir="./emissions"
 )
 
-# Start tracking
 tracker.start()
 
 try:
-    # --- Place your model training / inference code here ---
-    print("Training model sustainably...")
-    time.sleep(5)  # Simulating heavy computation
-    # --------------------------------------------------------
+    # --- Multiobjective Architecture Search / Training Loop ---
+    print("Exploring neural architectures sustainably...")
+    time.sleep(5)  # Simulating search step
 finally:
-    # Stop tracking and log emissions
     emissions: float = tracker.stop()
-    print(f"Total estimated emissions: {emissions:.6f} kg CO2eq")
+    print(f"Estimated search emissions: {emissions:.6f} kg CO2eq")
 
 ```
 
@@ -90,40 +89,35 @@ finally:
 ```python
 from codecarbon import track_emissions
 
-@track_emissions(project_name="model_inference")
-def run_model():
-    # Your heavy computation or model training logic
+@track_emissions(project_name="moo_architecture_evaluation")
+def evaluate_architecture():
+    # Model evaluation and carbon tracking logic
     pass
 
 if __name__ == "__main__":
-    run_model()
+    evaluate_architecture()
 
 ```
 
 ---
 
-## 📊 Monitoring & Reports
+## 📊 Monitoring & Pareto Optimization Metrics
 
-When you run your pipeline, CodeCarbon generates an `emissions.csv` file inside your specified output directory.
+When executing search iterations, the framework records telemetry to build your optimization dashboard:
 
-### Key Metrics Tracked:
-
-* **`duration`**: Execution time in seconds.
-* **`emissions`**: Carbon footprint in kg $CO_2$ equivalents ($CO_2eq$).
-* **`energy_consumed`**: Total energy consumed in kWh.
-* **`cpu_energy` / `gpu_energy` / `ram_energy**`: Energy breakdown per hardware component.
+* **`accuracy` / `performance**`: Primary objective to maximize.
+* **`emissions` / `carbon_footprint**`: Environmental impact metric ($kg \ CO_2eq$) to minimize.
+* **`energy_consumed`**: Total hardware power draw in kWh.
+* **`duration`**: Search or training execution duration.
 
 ---
 
-## 🌱 Best Practices for Frugal AI
+## 🌱 Best Practices for Green Neural Architecture Search
 
-To minimize the environmental impact of your AI workflows:
+1. **Pareto-Driven Selection:** Avoid over-provisioning model capacity if a smaller architecture yields marginal accuracy gains at a massive energy cost.
+2. **Early Stopping on Inefficient Trails:** Terminate architecture trials early if their carbon-to-accuracy ratio falls outside acceptable thresholds.
+3. **Data Efficiency:** Leverage transfer learning and structured search spaces to minimize redundant training steps.
 
-1. **Model Compression:** Apply pruning, quantization, and knowledge distillation to shrink model sizes.
-2. **Early Stopping:** Avoid unnecessary training epochs once model convergence plateaus.
-3. **Region Choice:** Train models in regions powered by renewable energy sources (low carbon intensity grid).
-4. **Data Efficiency:** Leverage transfer learning and pre-trained weights instead of training from scratch.
-5. **Search Space Efficiency:** Leverage appropriate search space and hyper-architectures instead of starting from scratch.
 ---
 
 ## 📜 License
@@ -134,5 +128,5 @@ This project is licensed under the MIT License - see the [LICENSE](https://www.g
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://www.google.com/search?q=https://github.com/your-username/green-ai-codecarbon/issues).
+Contributions, issues, and feature requests are welcome! Check out the [issues page](https://www.google.com/search?q=https://github.com/phamdps/greenmoo/issues).
 

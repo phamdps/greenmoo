@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1 style="margin-bottom: 0;">🌿 Multiobjective Green AI & Automated NAS</h1>
+<h1 style="margin-bottom: 0;">🌿 Multiobjective Green AI & Automated Deep Learning</h1>
 <h3><em>Maximizing Deep Learning Performance While Minimizing Carbon Footprint</em></h3>
 
 <p>

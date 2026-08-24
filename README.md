@@ -140,7 +140,7 @@ While large neural networks are generally easier to optimize and yield better pe
   <img src="images/frugal_ai.png" alt="Illustration of Frugal Learning vs Standard Deep Learning" width="900px">
 </p>
 
-To overcome this trade-off, we propose a progressive approach that starts with the simplest possible network—a single neuron, or linear regression—and grows it dynamically during training. By using backpropagation feedback to identify and target learning bottlenecks, we can add neurons or layers precisely where and when they are needed. This iterative architecture refinement dramatically streamlines Automated Deep Learning (AutoDL), replacing trial-and-error search methods with a single, highly efficient training session.
+To overcome this trade-off, it usually starts with a simplest possible network, and grows it dynamically during training. By using backpropagation feedback to identify and target learning bottlenecks, we can add neurons or layers or blocks precisely where and when they are needed. This iterative architecture refinement dramatically streamlines Automated Deep Learning (AutoDL), replacing trial-and-error search methods with a single, highly efficient training session.
 
 ---
 

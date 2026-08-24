@@ -82,6 +82,7 @@ env/
 *.sqlite3
 
 # Extra files
+docs/
 data/
 results/
 greenai/

@@ -35,7 +35,7 @@ Modern Artificial Intelligence models and search algorithms require vast computa
 
 ## 📊 Multiobjective Trade-off & Pareto Front
 
-The automated pipeline evaluates multiple network configurations to discover architectures that maximize performance while minimizing environmental impact:
+**Figure 1.** The automated pipeline evaluates multiple network configurations to discover architectures that maximize performance while minimizing environmental impact:
 
 <p align="center">
   <img src="images/greenmoo.jpeg" alt="Pareto Optimal Front: Accuracy vs Carbon Footprint" width="900px">
@@ -100,6 +100,14 @@ if __name__ == "__main__":
 ```
 
 ---
+
+## 🌿 Automated Sustainable Multimodal Architecture Search
+
+The proposed framework automatically explores and evaluates multimodal neural network architectures for transportation digital twin prediction across **Macro (travel demand), Meso (traffic flow), and Micro (vehicle trajectory)** levels. The architecture search process jointly considers predictive performance and computational/environmental objectives, including training energy, inference energy, CO₂ emissions, latency, and model complexity, to identify Pareto-optimal architectures that provide an effective balance between predictive capability and environmental sustainability.
+
+![Automated Pipeline for Sustainable Multimodal Architecture Search](images/sustainable_multimodal_architecture_search_pipeline.gif)
+
+**Figure 2.** Overview of the automated architecture-search pipeline. Multimodal transportation data are first represented across macro, meso, micro, and contextual levels. The framework then explores a configurable architecture search space covering temporal modules, spatial modules, multimodal fusion strategies, and cross-scale interactions. Candidate architectures are generated and evaluated according to multiple objectives, after which Pareto optimization identifies architectures that achieve favorable trade-offs between prediction performance and environmental impact. The optimization process iteratively updates and refines the search space, enabling the discovery of efficient architectures for sustainable transportation digital twin prediction.
 
 ## 📊 Monitoring & Pareto Optimization Metrics
 

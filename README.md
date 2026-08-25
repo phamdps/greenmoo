@@ -146,7 +146,7 @@ To overcome this trade-off, it usually starts with a simplest possible network, 
 
 ## 🌱 Conceptual Framework: An Incremental Multimodal Neural Architecture Growth For Frugal Learning
 
-![Automated Pipeline for Sustainable Multimodal Frugal Learning](images/frugal_ai.gif)
+![Automated Pipeline for Sustainable Multimodal Frugal Learning](images/frugal_ai_transportation.gif)
 
 Frugal AI focuses on building **accurate, adaptive, and computationally efficient AI systems** by using only the capacity and resources that are actually needed. Instead of starting with a large architecture and searching for the best configuration through expensive trial and error, our approach starts with a lightweight model and **grows the current architecture incrementally** when an expressivity bottleneck is detected.
 

@@ -160,6 +160,10 @@ The ultimate goal is to **learn more with less**: high-quality predictions, mini
 
 It is important to note that neither quantization nor distillation constitutes Neural Architecture Search (NAS) or network growth. While architectural methods dynamically discover or expand network layouts to boost capacity or performance, both quantization and distillation operate on pre-existing structures. Distillation compresses a model by transferring knowledge into a predefined, smaller student architecture, whereas quantization merely truncates the numerical precision of an existing network's weights without altering its structural wiring at all.
 
+### Special Consideration for (Green Frugal AI)
+
+Combining these methods drastically lowers the carbon footprint and energy draw of running continuous digital twin simulations. However, keep an eye on **catastrophic forgetting** in *continual learning*. Since quantizing or distilling a model too aggressively can sometimes degrade its plasticity, making it harder for the model to adapt to newly introduced traffic patterns or road layouts.
+
 ## 📜 License
 
 GreenMOO is open-source software released under the **GNU General Public License (GPL-3.0)** - see the [LICENSE](https://www.google.com/search?q=LICENSE) file for details.

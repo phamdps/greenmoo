@@ -154,10 +154,15 @@ For transportation digital twins, multimodal information from **Macro (travel de
 
 The ultimate goal is to **learn more with less**: high-quality predictions, minimal unnecessary parameters and computation, and architectures that can adapt efficiently from edge-friendly small models to conditional systems such as **Mixture-of-Experts**.
 
+## Quantization vs Distillation
+
+![Quantization vs Distillation](images/Quantization_vs_Distillation_.png)
+
+It is important to note that neither quantization nor distillation constitutes Neural Architecture Search (NAS) or network growth. While architectural methods dynamically discover or expand network layouts to boost capacity or performance, both quantization and distillation operate on pre-existing structures. Distillation compresses a model by transferring knowledge into a predefined, smaller student architecture, whereas quantization merely truncates the numerical precision of an existing network's weights without altering its structural wiring at all.
 
 ## 📜 License
 
-This project is licensed under the MIT License - see the [LICENSE](https://www.google.com/search?q=LICENSE) file for details.
+GreenMOO is open-source software released under the **GNU General Public License (GPL-3.0)** - see the [LICENSE](https://www.google.com/search?q=LICENSE) file for details.
 
 ---
 

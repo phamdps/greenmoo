@@ -166,7 +166,7 @@ Combining these methods drastically lowers the carbon footprint and energy draw 
 
 ## 📜 License
 
-GreenMOO is open-source software released under the **GNU General Public License (GPL-3.0)** - see the [LICENSE](https://www.google.com/search?q=LICENSE) file for details.
+GreenMOO is open-source software released under the **GNU General Public License (GPL-3.0)** - see the [LICENSE](https://github.com/phamdps/greenmoo/blob/main/LICENSE) file for details.
 
 ---
 

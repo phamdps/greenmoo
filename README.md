@@ -154,7 +154,7 @@ For transportation digital twins, multimodal information from **Macro (travel de
 
 The ultimate goal is to **learn more with less**: high-quality predictions, minimal unnecessary parameters and computation, and architectures that can adapt efficiently from edge-friendly small models to conditional systems such as **Mixture-of-Experts**.
 
-## Quantization vs Distillation
+## 📚 Quantization vs Distillation
 
 ![Quantization vs Distillation](images/Quantization_vs_Distillation_.png)
 

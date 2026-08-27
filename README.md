@@ -156,7 +156,7 @@ The ultimate goal is to **learn more with less**: high-quality predictions, mini
 
 ## 📚 Quantization vs Distillation
 
-![Quantization vs Distillation](images/Quantization_vs_Distillation_.png)
+![Quantization vs Distillation](images/quantization_distillation.gif)
 
 It is important to note that neither quantization nor distillation constitutes Neural Architecture Search (NAS) or network growth. While architectural methods dynamically discover or expand network layouts to boost capacity or performance, both quantization and distillation operate on pre-existing structures. Distillation compresses a model by transferring knowledge into a predefined, smaller student architecture, whereas quantization merely truncates the numerical precision of an existing network's weights without altering its structural wiring at all.
 

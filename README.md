@@ -164,9 +164,25 @@ It is important to note that neither quantization nor distillation constitutes N
 
 Combining these methods drastically lowers the carbon footprint and energy draw of running continuous digital twin simulations. However, keep an eye on **catastrophic forgetting** in *continual learning*. Since quantizing or distilling a model too aggressively can sometimes degrade its plasticity, making it harder for the model to adapt to newly introduced traffic patterns or road layouts.
 
+## 🤖 Multimodal AutoML
+
+Automated machine learning (AutoML) streamlines the deployment of high-performing models by automating pipeline design, model selection, and hyperparameter tuning. As modern workloads increasingly draw from heterogeneous data sources—including tabular data, text, images, audio, and continuous sensor streams—AutoML has expanded into multimodal settings (MMAutoML). In this paradigm, achieving optimal performance depends not only on efficient search algorithms, but also on robust representation learning and effective cross-modal fusion.
+
+Multimodal AutoML has evolved far beyond a niche research exploration. Frameworks capable of seamlessly orchestrating heterogeneous data—such as text, images, audio, and structured records—are now standard components of modern industrial and academic toolkits. Because automated search procedures are inherently compute- and carbon-intensive, MMAutoML pipelines should document the full cost of discovery alongside final model performance. 
+
+Reporting metrics such as evaluated configurations, wall-clock duration, GPU-hours, memory footprint, total energy consumption, and estimated carbon emissions ($\text{CO}_2\text{eq}$) makes the accuracy-compute-carbon trade-off explicit. This transparency drives sustainable methodologies like multi-fidelity search, early stopping, low-fidelity screening, carbon-aware designed architectures, and integrated eco-telemetry.
+
+
 ## 📜 License
 
 GreenMOO is open-source software released under the **GNU General Public License (GPL-3.0)** - see the [LICENSE](https://github.com/phamdps/greenmoo/blob/main/LICENSE) file for details.
+
+---
+
+
+# 📚 References
+
+[1] B. Škrlj and A. Osojnik, "Bridging Modalities: A Survey and Taxonomy of Multimodal AutoML (MMAutoML)," Artificial Intelligence Review, 2026.
 
 ---
 

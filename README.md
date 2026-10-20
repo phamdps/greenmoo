@@ -170,8 +170,7 @@ Automated machine learning (AutoML) streamlines the deployment of high-performin
 
 Multimodal AutoML has evolved far beyond a niche research exploration. Frameworks capable of seamlessly orchestrating heterogeneous data—such as text, images, audio, and structured records—are now standard components of modern industrial and academic toolkits. Because automated search procedures are inherently compute- and carbon-intensive, MMAutoML pipelines should document the full cost of discovery alongside final model performance. 
 
-Reporting metrics such as evaluated configurations, wall-clock duration, GPU-hours, memory footprint, total energy consumption, and estimated carbon emissions ($\text{CO}_2\text{eq}$) makes the accuracy-compute-carbon trade-off explicit. This transparency drives sustainable methodologies like multi-fidelity search, early stopping, low-fidelity screening, carbon-aware designed architectures, and integrated eco-telemetry.
-
+Given the heavy environmental toll of automated search, transparency in discovery costs is no longer negligible — it is a core requirement. Researchers and practitioners have to explicitly report metrics such as evaluated configurations, wall-clock duration, GPU-hours, memory footprint, total energy consumption, and estimated carbon emissions ($\text{CO}_2\text{eq}$) to make the accuracy-compute-carbon trade-off visible. Only by enforcing this reporting can we enable and accelerate sustainable practices such as multi-fidelity search, early stopping, low-fidelity screening, carbon-aware architectural design, and CodeCarbon-backed telemetry.
 
 ## 📜 License
 
